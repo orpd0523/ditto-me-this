@@ -1,0 +1,75 @@
+html {
+    box-sizing: border-box; //include the padding to the height and width
+    font-family: "Roboto", sans-serif;
+    font-family: "Roboto Mono", monospace;
+    font-family: "Work Sans", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+header {
+    background-color: palevioletred;
+    color:whitesmoke;
+    display: flex;
+    justify-content: center ;
+    margin-inline: auto;
+}
+
+.hero {
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    &__image{
+        height: 10rem;
+        width: auto;
+    }
+    &__title{
+    align-self: center;
+    }
+    &__how-to{
+    margin: 1rem;
+    }
+    &__ready{
+        align-self: center;
+        font-size: 1.25rem;
+    }
+}
+
+main {
+    border: 1px solid red; 
+}
+
+.card{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+
+
+    &__form{
+        border: 2px solid purple;
+        width: 10rem;
+        height: 12.5rem;
+        
+
+    }
+
+    &__hint{
+        color: palevioletred;
+        text-decoration: underline;
+        font-weight: 600;
+    }
+
+}
