@@ -1,7 +1,7 @@
 const image_base_url =
   "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/";
 
-let random = [1, 2, 3, 4, 5, 6];
+let random = [rand(), rand(), rand(), rand(), rand(), rand()];
 random = shuffle([...random, ...random]);
 
 function shuffle(arr) {
@@ -10,8 +10,23 @@ function shuffle(arr) {
 
 const flipCards = document.querySelectorAll(".main__flip");
 
+const button = document.querySelector(".main__button")
+button.addEventListener("click", (e) => {
+  random = [rand(), rand(), rand(), rand(), rand(), rand()];
+  random = shuffle([...random, ...random]);
+  flipCards.forEach((flipCard)=>{
+    const image = flipCard.querySelector(".main__image");
+    image.src = "./assets/logo/ditto.png";
+  })
+})
+
 function sleep() {
     return new Promise(resolve => setTimeout(resolve, 500));
+}
+
+function rand() {
+  let num = Math.floor(Math.random() * 152)
+  return num = num === 0 ? 1 : num;
 }
 
 let isSleeping = false;
