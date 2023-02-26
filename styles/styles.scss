@@ -34,6 +34,9 @@ body {
     display: block;
     transform: rotateY(180deg);
   }
+  &__line{
+    color: rgb(46, 46, 46);
+  }
   &__image{
     height: 8rem;
     width: 8rem;
