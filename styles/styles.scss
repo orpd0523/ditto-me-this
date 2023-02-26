@@ -1,75 +1,80 @@
 html {
-    box-sizing: border-box; //include the padding to the height and width
-    font-family: "Roboto", sans-serif;
-    font-family: "Roboto Mono", monospace;
-    font-family: "Work Sans", sans-serif;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box; //include the padding to the height and width
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Mono", monospace;
+  font-family: "Work Sans", sans-serif;
+}
 
-header {
-    background-color: palevioletred;
-    color:whitesmoke;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-inline: auto;
+  height: 14rem;
+  &__title{
+    width: 100%;
     display: flex;
-    justify-content: center ;
     margin-inline: auto;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: .25rem;
+  }
+  &__mirror{
+    display: block;
+    transform: rotateY(180deg);
+  }
+  &__image{
+    height: 8rem;
+    width: 8rem;
+  }
 }
 
-.hero {
-    &__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-direction: column;
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    }
-    &__image{
-        height: 10rem;
-        width: auto;
-    }
-    &__title{
-    align-self: center;
-    }
-    &__how-to{
-    margin: 1rem;
-    }
-    &__ready{
-        align-self: center;
-        font-size: 1.25rem;
-    }
-}
-
-main {
-    border: 1px solid red; 
-}
-
-.card{
-    background-color: beige;
-    display: flex;
-    flex-direction: column;
-
-
-    &__form{
-        border: 2px solid purple;
-        width: 10rem;
-        height: 12.5rem;
-        
-
-    }
-
-    &__hint{
-        color: palevioletred;
-        text-decoration: underline;
-        font-weight: 600;
-    }
-
+  &__card {
+    background-color: rgb(255, 255, 175);
+    border: 3px solid rgba(0, 0, 0, 0.734);
+    border-radius: 0.5rem;
+    width: 15rem;
+    height: auto;
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    align-items: center;
+  }
+  &__container{
+    padding-left: .75rem;
+    margin: .25rem;
+    margin-inline: auto;
+  }
+  &__flip{
+    background-color: #e6a4f6;
+    border: 2px solid black;
+    border-radius: .5rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 4rem;
+    width: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+  &__image{
+    height: 30px;
+    width: 30px;
+  }
 }
