@@ -52,7 +52,7 @@ body {
     background-color: rgb(255, 255, 175);
     border: 3px solid rgba(0, 0, 0, 0.734);
     border-radius: 0.5rem;
-    width: 18rem;
+    width: 19rem;
     height: auto;
     margin-bottom: 2rem;
     margin-top: 1rem;
@@ -60,7 +60,7 @@ body {
   }
   &__container{
     margin-inline: auto;
-    margin-left: .40rem;
+    margin-left: .90rem;
   }
   &__flip{
     background-color: #e6a4f6;
@@ -71,7 +71,7 @@ body {
     justify-content: center;
     height: 5rem;
     width: 4rem;
-    padding-top: 1rem;
+    padding-top: .5rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
     &--color{
@@ -92,7 +92,7 @@ body {
       padding-top: .25rem;
     }
   &__image{
-    height: 50px;
-    width: 50px;
+    height: 4rem;
+    width: 3.75rem;
   }
 }
