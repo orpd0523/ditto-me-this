@@ -47,20 +47,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-inline: auto;
   &__card {
     background-color: rgb(255, 255, 175);
     border: 3px solid rgba(0, 0, 0, 0.734);
     border-radius: 0.5rem;
-    width: 15rem;
+    width: 18rem;
     height: auto;
     margin-bottom: 2rem;
     margin-top: 1rem;
     align-items: center;
   }
   &__container{
-    padding-left: .75rem;
-    margin: .25rem;
     margin-inline: auto;
+    margin-left: .40rem;
   }
   &__flip{
     background-color: #e6a4f6;
@@ -69,8 +69,8 @@ body {
     display: inline-flex;
     flex-direction: row;
     justify-content: center;
-    height: 4rem;
-    width: 3rem;
+    height: 5rem;
+    width: 4rem;
     padding-top: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -89,9 +89,10 @@ body {
       width: 2rem;
       height: 2rem;
       margin-bottom: 2rem;
+      padding-top: .25rem;
     }
   &__image{
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
   }
 }
